@@ -1,0 +1,136 @@
+/* sutar.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F5F5DC; /* Beige background */
+    color: #2F4F4F; /* Dark slate gray text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2F4F4F; /* Dark slate gray */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: #FFD700; /* Gold color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Wrapper Styling */
+.wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFF8DC; /* Cornsilk background */
+    border: 1px solid #DAA520; /* Goldenrod border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    color: #8B4513; /* Saddle brown */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label {
+    margin-bottom: 5px;
+    color: #2F4F4F; /* Dark slate gray */
+}
+
+.form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8B4513; /* Saddle brown */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #8B4513; /* Saddle brown */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #A0522D; /* Sienna */
+}
+
+/* Result Paras */
+.resultParas {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultParas p {
+    margin-bottom: 10px;
+}
+
+.resultParas .guesses {
+    font-weight: bold;
+    color: #8B0000; /* Dark red */
+}
+
+.resultParas .lastresult {
+    font-weight: bold;
+    color: #008000; /* Green */
+}
+
+.resultParas .lowORhi {
+    color: #FF8C00; /* Dark orange */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 15px;
+    }
+
+    .form input[type="text"], .form input[type="submit"] {
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+}

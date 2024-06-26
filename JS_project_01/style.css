@@ -1,0 +1,93 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .canvas {
+    margin: 2rem auto;
+    width: 80%;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .button {
+    width: 80px;
+    height: 80px;
+    border: solid black 2px;
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  #grey {
+    background-color: grey;
+  }
+  
+  #white {
+    background-color: white;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+  }
+  
+  @media (max-width: 768px) {
+    .button {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .canvas {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

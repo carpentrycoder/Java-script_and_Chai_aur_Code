@@ -1,0 +1,89 @@
+/* sutar.css */
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif; /* Korean font for aesthetic */
+    background-color: #121212; /* Dark background for black cat theme */
+    color: #e7e7e7; /* Light text color */
+}
+
+nav {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #e7e7e7;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff4081; /* Aesthetic pink highlight */
+}
+
+.project {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.key {
+    font-size: 2rem;
+    padding: 1rem;
+    border: 2px dashed #ff4081; /* Aesthetic pink border */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.key:hover {
+    background-color: #ff4081;
+    color: #121212;
+}
+
+@media (max-width: 768px) {
+    .key {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+
+table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #e7e7e7;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #1c1c1c;
+    color: #ff4081;
+}
+
+td {
+    background-color: #121212;
+}
+
+.color {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Add a custom font for better aesthetics */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');

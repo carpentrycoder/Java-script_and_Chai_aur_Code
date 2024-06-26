@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>
+        Button hai Bhai
+    </button>
+</body>
+<script>
+    class React{
+        constructor(){
+            this.library = "React"
+            this.server = "https://localHost:3000"
+
+            //requirement 
+            document
+             .querySelector('button')
+             .addEventListener('click',this.handleclick.bind(this))
+        }
+        handleclick(){
+            console.log("button clicked");
+            console.log(this);
+        }
+    }
+    const app = new React()
+</script>
+</html>
+
+<!---
+
+Bind method ka use JavaScript mein tab hota hai jab humein kisi function ko specific context ya object ke saath attach karna hota hai. 
+Yeh function ka this keyword uss specific context ya object ko refer karega jiske saath wo bind kiya gaya hai.
+Is example mein, humne React class banayi hai aur usme ek button ke click event ke liye listener attach kiya hai. 
+Agar hum directly this.handleclick ko event listener ke taur pe pass karte, toh button click hone par this undefined ya incorrect context ko refer karta.
+Is problem ko solve karne ke liye hum bind method ka use karte hain taaki this correctly React instance ko refer kare.
+
+-->
