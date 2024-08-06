@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="sutar.css">
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Sutar's Shop</a>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to Sutar's Shop</h1>
+            <p>Your one-stop shop for the best products!</p>
+        </div>
+    </header>
+
+    <main class="container">
         <h1>Your Cart</h1>
         <div id="cart" class="cart-list">
             <!-- Cart items will be rendered here -->
@@ -16,7 +35,18 @@
             Back to Products
             <div id="cart-count" class="cart-count">0</div>
         </a>
-    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sutar's Shop. All rights reserved.</p>
+            <ul class="footer-menu">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
